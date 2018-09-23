@@ -1,0 +1,10 @@
+{
+  "type" : "object",
+  "properties": {
+    "deficits": {
+      "type": "array",
+      "items": { "$ref": "file:micronutrient.schema.json"},
+      "default" : []
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$id": "https://baze.com/micronutrient.schema.json",
+  "type" : "object",
+  "properties": {
+    "name": "string",
+    "quantity" : {
+      "type" : "number",
+      "minimum" : 0
+    },
+    "base_unit": "string",
+    "unit_multiplier":{
+      "type":"number",
+      "minimum" : 0
+    }
+  }
+}

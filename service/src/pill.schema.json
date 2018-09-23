@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type" : "object",
+  "required": [
+    "micronutrients"
+    ],
+  "properties": {
+    "micronutrients": {
+      "type": "array",
+      "items": { "$ref": "file:/home/manuel/go/src/inventory/service/src/micronutrient.schema.json"},
+      "default" : []
+    }
+  }
+}
+

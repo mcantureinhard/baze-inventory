@@ -1,0 +1,10 @@
+{
+  "type" : "object",
+  "properties": {
+    "micronutrients": {
+      "type": "array",
+      "items": { "$ref": "https://baze.com/micronutrient.schema.json"},
+      "default" : []
+    }
+  }
+}
