@@ -6,10 +6,19 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"fmt"
 )
 
 type Controller struct {
 	Repository Repository
+}
+
+func (c *Controller) Test(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "text/plain; charset=utf-8")
+    w.Header().Set("X-Content-Type-Options", "nosniff")
+    w.WriteHeader(http.StatusOK)
+    fmt.Fprintln(w, "Hello, World!")
+    return
 }
 
 func (c *Controller) getPillsWithMicroNutrients(w http.ResponseWriter, r *http.Request) {

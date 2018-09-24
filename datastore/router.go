@@ -19,6 +19,12 @@ type Routes []Route
 
 var routes = Routes{
 	Route{
+		"/",
+		"GET",
+		"/",
+		controller.Test,
+	},
+	Route{
 		"getPillsWithMicroNutrients",
 		"POST",
 		"/getPillsWithMicroNutrients",
