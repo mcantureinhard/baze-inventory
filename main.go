@@ -1,7 +1,7 @@
 package main
 
 import (
-	"inventory/service/src/datastore"
+	"inventory/datastore"
 	"log"
 	"net/http"
 
